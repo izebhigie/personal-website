@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tech Goals</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Tech Goals for the Next 2 Years</h1>
-    </header>
+        <nav class="nav">
+            <div class="logo">Daniel Izebhigie</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#goals">Goals</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="hamburger-nav">
+            <div class="logo">Daniel Izebhigie</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#goals" onclick="toggleMenu()">Goals</a></li>
+                </div>
+            </div>
+        </nav>
+</header>
 
     <main>
         <section id="profile">
@@ -19,15 +41,6 @@
             <p data-testid="currentDay">Current Day: <span id="day"></span></p>
             <p data-testid="slackEmail">Slack Email: dizegbe@gmail.com</p>
             <img src="slackProfilePicture.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture">
-        </section>
-
-        <section id="links">
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="https://hng.tech/learn" data-testid="hngLink" target="_blank">HNG Learn</a></li>
-                <li><a href="https://keyword.dog" data-testid="keywordLink" target="_blank">Keyword Dog</a></li>
-                <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink" target="_blank">Scrape Any Web</a></li>
-            </ul>
         </section>
 
         <section id="goals">
@@ -41,6 +54,17 @@
                 
             </ul>
         </section>
+
+        <section id="links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://hng.tech/learn" data-testid="hngLink" target="_blank">HNG Learn</a></li>
+                <li><a href="https://keyword.dog" data-testid="keywordLink" target="_blank">Keyword Dog</a></li>
+                <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink" target="_blank">Scrape Any Web</a></li>
+            </ul>
+        </section>
+
+        
     </main>
 
     <footer>
