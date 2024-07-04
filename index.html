@@ -35,12 +35,16 @@
 
     <main>
         <section id="profile">
-            <h2>Profile</h2>
-            <p data-testid="slackDisplayName">Hi, I'm Daniel</p>
-            <p data-testid="currentTimeUTC">Current Time (UTC): <span id="time"></span></p>
-            <p data-testid="currentDay">Current Day: <span id="day"></span></p>
-            <p data-testid="slackEmail">Slack Email: dizegbe@gmail.com</p>
-            <img src="slackProfilePicture.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture">
+            <div class="section_pic-container">
+                <img class="img" src="images/danny.png" alt="Slack Profile Picture" data-testid="slackProfilePicture">
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello, I'm </p>
+                <h1 class="title" data-testid="slackDisplayName">Daniel</h1>
+                <p class="section_text_p2" data-testid="currentTimeUTC">Current Time (UTC): <span id="time"></span></p>
+                <p class="section_text_p2" data-testid="currentDay">Current Day: <span id="day"></span></p>
+                <p class="section_text_p2" data-testid="slackEmail">dizegbe@gmail.com</p>
+            </div>
         </section>
 
         <section id="goals">

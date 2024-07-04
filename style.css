@@ -15,14 +15,16 @@ html{
     scroll-behavior: smooth;
 }
 
-main {
-    padding: 1em;
-    max-width: 800px;
-    margin: auto;
-}
 
 section {
-    margin-bottom: 2em;
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section-container{
+    display: flex;;
 }
 
 h1, h2 {
@@ -149,15 +151,43 @@ a:hover{
     border-radius: 5px;
 }
 
-img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-}
+
+/* PROFILE*/
+
+ #profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+ }
+
+ .section_pic-container{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+ }
+ .section_text{
+    align-self: center;
+    text-align: center;
+ }
+ .section_text p{
+    font-weight: 600;
+ }
+ .section_text_p1{
+    text-align: center;
+ }
+ .section_text_p2{
+    text-align: center;
+    font-size: 1.7rem;
+ }
+ .title{
+    font-size: 3rem;
+    text-align: center;
+ }
 
 
- 
-
+ /*RESPONSIVE */
 @media (max-width: 600px) {
     body {
         padding: 0 1em;
@@ -168,5 +198,25 @@ img {
     .hamburger-nav{
         display: flex;
         justify-content: space-between
+    }
+    section {
+        margin: 0 5%;
+    }
+    section,
+    .section-container{
+        height: fit-content;
+    }
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    #profile,
+    .section-container{
+        display: block;
+    }
+    .section_pic-container{
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 2rem;
     }
 }
