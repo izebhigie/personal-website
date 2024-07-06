@@ -1,6 +1,4 @@
-import { inject } from '@vercel/analytics';
- 
-inject();
+import { inject } from "@vercel/analytics"
 
 document.addEventListener('DOMContentLoaded', () => {
     const updateTime = () => {
